@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Teko&display=swap');
 @import "~bulma/sass/utilities/initial-variables"
 
 // Config vars
@@ -5,10 +6,43 @@
 $kaldi-red: #D64000
 $kaldi-red-invert: #fff
 
-$primary: $kaldi-red
-$primary-invert: $kaldi-red-invert
-$body-color: #333
+/// solarized color pallette
+$base03: rgb(0, 43, 54);
+$base02: rgb(7, 54, 66);
+$base01: rgb(88, 110, 117);
+$base00: rgb(101, 123, 131);
+$base0: rgb(131, 148, 150);
+$base1: rgb(147, 161, 161);
+$base2: rgb(238, 232, 213);
+$base3: rgb(253, 246, 227);
+$yellow: rgb(181, 137, 0);
+$orange: rgb(203, 75, 22);
+$red: rgb(220, 50, 47);
+$magenta: rgb(211, 54, 130);
+$violet: rgb(108, 113, 196);
+$blue: rgb(38, 139, 210);
+$cyan: rgb(42, 161, 152);
+$green: rgb(133, 153, 0);
+
+$primary: $base03
+$primary-invert: $base3
+$body-color: $base03
 $black: #2b2523
+
+
+// navbar overrides
+$navbar-background-color: $primary
+
+// footer overrides
+$footer-background-color: $primary
+
+//typography overrides
+$title-color: $magenta
+// $family-primary: 
+// $body-family: 'Teko', sans-serif;
+.title
+  font-family: 'Teko', sans-serif
+  font-weight: 400
 
 .navbar .navbar-menu
   box-shadow:none !important
@@ -82,7 +116,7 @@ $black: #2b2523
   padding: 0 1rem
 footer.footer
   padding: 3rem 0rem 0rem
-  background-color: transparent
+  // background-color: transparent
 
 //Menu overrides
 $menu-item-color: $white-ter

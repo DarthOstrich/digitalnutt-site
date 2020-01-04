@@ -5,43 +5,7 @@ import { Link, graphql, StaticQuery } from 'gatsby';
 import Layout from '../components/Layout';
 // import Features from '../components/Features';
 // import BlogRoll from '../components/BlogRoll';
-
-const ProjectCard = ({ project }) => (
-  <article>
-    <Link to={project.fields.slug}>
-      <h1>{project.frontmatter.title}</h1>
-    </Link>
-  </article>
-);
-
-const ProjectRoll = () => (
-  <StaticQuery
-    query={graphql`
-      query ProjectRollQuery {
-        allMarkdownRemark(
-          sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "project" } } }
-        ) {
-          edges {
-            node {
-              id
-              frontmatter {
-                title
-              }
-              fields {
-                slug
-              }
-            }
-          }
-        }
-      }
-    `}
-    render={(data, count) => {
-      const { edges: projects } = data.allMarkdownRemark;
-      return <ProjectCard project={projects[0].node} />;
-    }}
-  />
-);
+import ProjectRoll from '../components/ProjectRoll';
 
 export const IndexPageTemplate = ({
   image,

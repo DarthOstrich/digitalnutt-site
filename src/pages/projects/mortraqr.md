@@ -1,14 +1,14 @@
 ---
 templateKey: project
-title: Child 360
-type: Static Website
+title: MorTraqr
+type: Web Application
 description: Did a Website
 featuredimage: /img/flavor_wheel.jpg
 tags:
   - flavor
   - tasting
 technology:
-  - html
+  - AWS
 ---
 
 ![flavor wheel](/img/flavor_wheel.jpg)
