@@ -4,10 +4,34 @@ import { Link, graphql, StaticQuery } from 'gatsby';
 import PreviewCompatibleImage from './PreviewCompatibleImage';
 
 const ProjectCard = ({ project }) => (
-  <article className="column">
-    <Link to={project.fields.slug}>
-      <h1>{project.frontmatter.title}</h1>
-      <h2>{project.frontmatter.type}</h2>
+  <article className="column " style={{ padding: '0' }}>
+    <Link to={project.fields.slug} style={{ position: 'relative' }}>
+      <figure className="image is-3by2">
+        <img
+          src={project.frontmatter.featuredimage.childImageSharp.fluid.src}
+        />
+        <div
+          className="label"
+          style={{
+            backgroundColor: 'rgba(7,54,66,0.8)',
+            position: 'absolute',
+            top: '0',
+            left: '0',
+            right: '0',
+            bottom: '0',
+            display: 'flex',
+            textAlign: 'center',
+            justifyContent: 'center',
+            alignItems: 'center',
+            flexDirection: 'column',
+          }}>
+          <h1 className="title">{project.frontmatter.title}</h1>
+          <h2 className="subtitle has-text-white">
+            {project.frontmatter.type}
+          </h2>
+        </div>
+      </figure>
+      {/* <PreviewCompatibleImage imageInfo={project.frontmatter.featuredimage} /> */}
     </Link>
   </article>
 );
@@ -18,7 +42,7 @@ class ProjectRoll extends React.Component {
     const { edges: projects } = data.allMarkdownRemark;
 
     return (
-      <article className="columns">
+      <article className="columns ">
         {projects.map(project => {
           return <ProjectCard project={project.node} key={project.node.id} />;
         })}
@@ -101,6 +125,13 @@ export default () => (
               frontmatter {
                 title
                 type
+                featuredimage {
+                  childImageSharp {
+                    fluid(maxWidth: 120, quality: 100) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
               }
               fields {
                 slug

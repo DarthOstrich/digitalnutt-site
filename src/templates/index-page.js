@@ -65,81 +65,72 @@ export const IndexPageTemplate = ({
     {/*     </h3> */}
     {/*   </div> */}
     {/* </div> */}
-    <section className="section">
-      <div className="container">
+    <div className="container">
+      <section className="section">
         <h1 className="title">Latest Projects</h1>
         <ProjectRoll />
-      </div>
-    </section>
-    <section className="section">
-      <div className="container">
+      </section>
+    </div>
+    <div className="container">
+      <section className="section">
         <h1 className="title">Skills</h1>
         <p>Skills</p>
-        <h2>Bottom Line</h2>
+        <h2 className="title">Bottom Line</h2>
         <p>
           I am a web developer who mainly works in Javascript. If you like
           lists, keep reading!
         </p>
-        <h2>Development</h2>
-        <h3>Everyday Languages</h3>
-        <p>Javascript, HTML, CSS</p>
-        <h3>Familiar Languages</h3>
-        <p>Swift, Kotlin, Python</p>
-      </div>
-    </section>
-    <section className="section">
-      <div className="container">
+        <h2 className="title">Development</h2>
+        <h3 className="subtitle">Everyday Languages</h3>
+        <article className="columns">
+          <div className="column">Javascript</div>
+          <div className="column">HTML</div>
+          <div className="column">CSS</div>
+        </article>
+        <h3 className="subtitle">Familiar Languages</h3>
+        <article className="columns">
+          <div className="column">Swift</div>
+          <div className="column">Kotlin</div>
+          <div className="column">Python</div>
+          <div className="column">PhP</div>
+        </article>
+        <h3 className="subtitle">Frameworks</h3>
+        <article className="columns">
+          <div className="column">MongoDB</div>
+          <div className="column">AWS</div>
+          <div className="column">MySQL</div>
+          <div className="column">React</div>
+          <div className="column">Shopify</div>
+          <div className="column">Gatsby</div>
+        </article>
+        <h3 className="subtitle">Tools</h3>
+        <article className="columns">
+          <div className="column">GitHub</div>
+          <div className="column">npm</div>
+          <div className="column">webpack</div>
+        </article>
+      </section>
+    </div>
+    <div className="container">
+      <section className="section">
         <h1 className="title">About</h1>
-        <p>About</p>
-      </div>
-    </section>
-    {/* <section className="section section--gradient"> */}
-    {/*   <div className="container"> */}
-    {/*     <div className="section"> */}
-    {/*       <div className="columns"> */}
-    {/*         <div className="column is-10 is-offset-1"> */}
-    {/*           <div className="content"> */}
-    {/*             <div className="content"> */}
-    {/*               <div className="tile"> */}
-    {/*                 <h1 className="title">{mainpitch.title}</h1> */}
-    {/*               </div> */}
-    {/*               <div className="tile"> */}
-    {/*                 <h3 className="subtitle">{mainpitch.description}</h3> */}
-    {/*               </div> */}
-    {/*             </div> */}
-    {/*             <div className="columns"> */}
-    {/*               <div className="column is-12"> */}
-    {/*                 <h3 className="has-text-weight-semibold is-size-2"> */}
-    {/*                   {heading} */}
-    {/*                 </h3> */}
-    {/*                 <p>{description}</p> */}
-    {/*               </div> */}
-    {/*             </div> */}
-    {/*             <Features gridItems={intro.blurbs} /> */}
-    {/*             <div className="columns"> */}
-    {/*               <div className="column is-12 has-text-centered"> */}
-    {/*                 <Link className="btn" to="/products"> */}
-    {/*                   See all products */}
-    {/*                 </Link> */}
-    {/*               </div> */}
-    {/*             </div> */}
-    {/*             <div className="column is-12"> */}
-    {/*               <h3 className="has-text-weight-semibold is-size-2"> */}
-    {/*                 Latest stories */}
-    {/*               </h3> */}
-    {/*               <BlogRoll /> */}
-    {/*               <div className="column is-12 has-text-centered"> */}
-    {/*                 <Link className="btn" to="/blog"> */}
-    {/*                   Read more */}
-    {/*                 </Link> */}
-    {/*               </div> */}
-    {/*             </div> */}
-    {/*           </div> */}
-    {/*         </div> */}
-    {/*       </div> */}
-    {/*     </div> */}
-    {/*   </div> */}
-    {/* </section> */}
+        <blockquote>I Just want to build cool things.</blockquote>
+        <p>
+          The years I spent in the Air Force and as a developer have taught me
+          the importance of order and structure. Through this, and my
+          fascination with philosophy, I have grown a passion for functional
+          minimalism. These ideals translate into how I conduct my work. Every
+          project serves a function, and every element serves a purpose.
+        </p>
+        <p>
+          I am currently working as a freelance web developer, and trying to
+          learn as much about Javascript along the way. When it comes down to
+          it, I just want to build cool things. When I'm not writing code I'm
+          probably playing <strike>Overwatch</strike> Apex Legends, listening to
+          an audiobook or drinking craft beer...or possibly all three.
+        </p>
+      </section>
+    </div>
   </>
 );
 
