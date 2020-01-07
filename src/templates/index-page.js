@@ -67,34 +67,51 @@ export const IndexPageTemplate = ({
     {/* </div> */}
     <div className="container">
       <section className="section">
-        <h1 className="title">Latest Projects</h1>
+        <h1 className="title is-1">Latest Projects</h1>
         <ProjectRoll />
       </section>
     </div>
     <div className="container">
       <section className="section">
-        <h1 className="title">Skills</h1>
-        <p>Skills</p>
-        <h2 className="title">Bottom Line</h2>
+        <h1 className="title is-1">Skills</h1>
+        <h2 className="title is-2">Bottom Line</h2>
         <p>
           I am a web developer who mainly works in Javascript. If you like
           lists, keep reading!
         </p>
-        <h2 className="title">Development</h2>
-        <h3 className="subtitle">Everyday Languages</h3>
+        <h2 className="title is-2">Development</h2>
+        <h3 className="title is-3">Everyday Languages</h3>
         <article className="columns">
-          <div className="column">Javascript</div>
-          <div className="column">HTML</div>
-          <div className="column">CSS</div>
+          <div className="column">
+            <h4 className="subtitle">Javascript</h4>
+            <p>
+              <strong>Flavors:</strong>
+            </p>
+            <p>Vanilla, ES6+, Node</p>
+          </div>
+          <div className="column">
+            <h4 className="subtitle">HTML</h4>
+            <p>
+              <strong>Flavors:</strong>
+            </p>
+            <p>Pug</p>
+          </div>
+          <div className="column">
+            <h4 className="subtitle">CSS</h4>
+            <p>
+              <strong>Flavors:</strong>
+            </p>
+            <p>Sass</p>
+          </div>
         </article>
-        <h3 className="subtitle">Familiar Languages</h3>
+        <h3 className="title is-3">Familiar Languages</h3>
         <article className="columns">
           <div className="column">Swift</div>
           <div className="column">Kotlin</div>
           <div className="column">Python</div>
           <div className="column">PhP</div>
         </article>
-        <h3 className="subtitle">Frameworks</h3>
+        <h3 className="title is-3">Frameworks</h3>
         <article className="columns">
           <div className="column">MongoDB</div>
           <div className="column">AWS</div>
@@ -103,7 +120,7 @@ export const IndexPageTemplate = ({
           <div className="column">Shopify</div>
           <div className="column">Gatsby</div>
         </article>
-        <h3 className="subtitle">Tools</h3>
+        <h3 className="title">Tools</h3>
         <article className="columns">
           <div className="column">GitHub</div>
           <div className="column">npm</div>
@@ -113,7 +130,7 @@ export const IndexPageTemplate = ({
     </div>
     <div className="container">
       <section className="section">
-        <h1 className="title">About</h1>
+        <h1 className="title is-1">About</h1>
         <blockquote>I Just want to build cool things.</blockquote>
         <p>
           The years I spent in the Air Force and as a developer have taught me

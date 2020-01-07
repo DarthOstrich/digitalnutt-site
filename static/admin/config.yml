@@ -40,6 +40,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Technology", name: "technology", widget: "list"}
+      - {label: "Role", name: "role", widget: "string"}
       - {label: "Project URL", name: "url", widget: "string", required: false}
   - name: "pages"
     label: "Pages"

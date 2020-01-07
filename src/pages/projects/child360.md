@@ -4,6 +4,7 @@ title: Child 360
 type: Static Website
 description: Did a Website
 featuredimage: /img/flavor_wheel.jpg
+role: Lead Developer
 tags:
   - flavor
   - tasting
