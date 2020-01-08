@@ -8,21 +8,63 @@ import Pricing from '../components/Pricing';
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 import Content, { HTMLContent } from '../components/Content';
 
-export const ProjectPageTemplate = ({ image, title, description, content }) => {
+export const ProjectPageTemplate = ({
+  image,
+  title,
+  description,
+  content,
+  role,
+  technology,
+  url,
+}) => {
   // const PostContent = contentComponent || Content;
   return (
     <div className="content">
       <div
-        className="full-width-image-container margin-top-0"
+        className="full-width-image-container margin-top-0 margin-bottom-0"
         style={{
           backgroundImage: `url(${
             !!image.childImageSharp ? image.childImageSharp.fluid.src : image
           })`,
         }}></div>
-      <section className="container">
-        <h2 className="title is-2h2">Role</h2>
-        <h2 className="title is-2h2">Technology</h2>
-        <h2 className="title is-2h2">Description</h2>
+      <section className="section">
+        <h1
+          className="has-text-centered title is-1"
+          style={{
+            marginTop: '-5rem',
+            position: 'relative',
+          }}>
+          <a
+            className="has-text-white"
+            href={url}
+            style={{
+              background: '#CB4B16',
+              paddingLeft: '2rem',
+              paddingRight: '2rem',
+            }}>
+            {title}
+          </a>
+        </h1>
+        <article className="columns container">
+          <div className="column">
+            <h2 className="title is-2">Role</h2>
+            <p>{role}</p>
+          </div>
+          <div className="column">
+            <h2 className="title is-2">Technology</h2>
+            <div className="tags">
+              {technology.map(tech => (
+                <span className="tag is-success" key={tech}>
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
+        </article>
+        <h2 className="title is-2">Description</h2>
+        <p>{description}</p>
+        <p>Link: {<a href={url}>{title}</a> || 'No Link available'}</p>
+        <h2 className="title is-2">Project Details</h2>
         <HTMLContent content={content} />
       </section>
     </div>
@@ -60,6 +102,7 @@ const ProjectPage = ({ data }) => {
       <ProjectPageTemplate
         title={frontmatter.title}
         description={frontmatter.description}
+        url={frontmatter.url}
         role={frontmatter.role}
         technology={frontmatter.technology}
         image={frontmatter.featuredimage}
@@ -87,6 +130,7 @@ export const projectPageQuery = graphql`
         description
         role
         technology
+        url
         featuredimage {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {

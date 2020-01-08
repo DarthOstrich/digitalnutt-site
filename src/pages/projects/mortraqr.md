@@ -7,8 +7,11 @@ featuredimage: /img/flavor_wheel.jpg
 tags:
   - flavor
   - tasting
+role: Lead Developer
+url: https://mortraqr.com/
 technology:
   - AWS
+  - Node
 ---
 
 <!-- ![flavor wheel](/img/flavor_wheel.jpg) -->

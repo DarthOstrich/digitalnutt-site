@@ -9,7 +9,7 @@ tags:
   - flavor
   - tasting
 technology:
-  - html
+  - HTML5
 ---
 
 ![flavor wheel](/img/flavor_wheel.jpg)
