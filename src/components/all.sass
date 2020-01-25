@@ -37,12 +37,7 @@ $navbar-background-color: $primary
 $footer-background-color: $primary
 
 //typography overrides
-$title-color: $magenta
-// $family-primary: 
-// $body-family: 'Teko', sans-serif;
-.title
-  font-family: 'Teko', sans-serif
-  font-weight: 400
+$title-color: $black
 
 .navbar .navbar-menu
   box-shadow:none !important
@@ -162,6 +157,35 @@ $menu-label-color: $white-ter
 // project page
 
 @import "~bulma"
+
+// typography overrides
+.has-text-yellow
+  color: $yellow !important
+
+.title.is-1
+  color: $magenta
+
+blockquote
+  font-weight: 200;
+  font-size: 3rem;
+  padding: 4rem;
+  color: $blue;
+
+blockquote:before
+  content: "\201C";
+  font-family: serif;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #999;
+  font-size: 15rem;
+  opacity: 0.3;
+
+// $family-primary: 
+// $body-family: 'Teko', sans-serif;
+.title
+  font-family: 'Teko', sans-serif
+  font-weight: 400
 
 
 // responsiveness

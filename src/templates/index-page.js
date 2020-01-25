@@ -7,6 +7,14 @@ import Layout from '../components/Layout';
 // import BlogRoll from '../components/BlogRoll';
 import ProjectRoll from '../components/ProjectRoll';
 
+const IconHolder = ({ icon, title }) => (
+  <>
+    <figure className="image is-96x96" style={{ margin: 'auto' }}>
+      <img src={`/img/icons/${icon}.png`} alt={`${icon} icon`} />
+    </figure>
+    <h4 className="subtitle">{title}</h4>
+  </>
+);
 export const IndexPageTemplate = ({
   image,
   title,
@@ -17,87 +25,46 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <>
-    {/* <div */}
-    {/*   className="full-width-image margin-top-0" */}
-    {/*   style={{ */}
-    {/*     backgroundImage: `url(${ */}
-    {/*       !!image.childImageSharp ? image.childImageSharp.fluid.src : image */}
-    {/*     })`, */}
-    {/*     backgroundPosition: `top left`, */}
-    {/*     backgroundAttachment: `fixed`, */}
-    {/*   }} */}
-    {/* > */}
-    {/*   <div */}
-    {/*     style={{ */}
-    {/*       display: 'flex', */}
-    {/*       height: '150px', */}
-    {/*       lineHeight: '1', */}
-    {/*       justifyContent: 'space-around', */}
-    {/*       alignItems: 'left', */}
-    {/*       flexDirection: 'column', */}
-    {/*     }} */}
-    {/*   > */}
-    {/*     <h1 */}
-    {/*       className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen" */}
-    {/*       style={{ */}
-    {/*         boxShadow: */}
-    {/*           'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px', */}
-    {/*         backgroundColor: 'rgb(255, 68, 0)', */}
-    {/*         color: 'white', */}
-    {/*         lineHeight: '1', */}
-    {/*         padding: '0.25em', */}
-    {/*       }} */}
-    {/*     > */}
-    {/*       {title} */}
-    {/*     </h1> */}
-    {/*     <h3 */}
-    {/*       className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen" */}
-    {/*       style={{ */}
-    {/*         boxShadow: */}
-    {/*           'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px', */}
-    {/*         backgroundColor: 'rgb(255, 68, 0)', */}
-    {/*         color: 'white', */}
-    {/*         lineHeight: '1', */}
-    {/*         padding: '0.25em', */}
-    {/*       }} */}
-    {/*     > */}
-    {/*       {subheading} */}
-    {/*     </h3> */}
-    {/*   </div> */}
-    {/* </div> */}
-    <div className="container">
-      <section className="section">
-        <h1 className="title is-1">Latest Projects</h1>
+    <section className="section">
+      <div className="container">
+        <h1 className="title is-1 has-text-centered">Latest Projects</h1>
         <ProjectRoll />
-      </section>
-    </div>
-    <div className="container">
-      <section className="section">
-        <h1 className="title is-1">Skills</h1>
+      </div>
+    </section>
+    <section className="section">
+      <div className="container">
+        <h1 className="title is-1 has-text-centered">Skills</h1>
         <h2 className="title is-2">Bottom Line</h2>
-        <p>
-          I am a web developer who mainly works in Javascript. If you like
-          lists, keep reading!
+        <p className="subtitle">
+          I am a web developer who mainly works in Javascript. I also write a
+          lot. You can find me on{' '}
+          <a href="https://medium.com/@jarednutt27">Medium</a>,{' '}
+          <a href="https://dev.to/darthostrich">Practical Dev</a> or in video
+          version on{' '}
+          <a href="https://www.youtube.com/channel/UCZ9sBtbkSoLhjUaS-B0I-BQ">
+            Youtube
+          </a>
+          .
         </p>
         <h2 className="title is-2">Development</h2>
         <h3 className="title is-3">Everyday Languages</h3>
         <article className="columns">
-          <div className="column">
-            <h4 className="subtitle">Javascript</h4>
+          <div className="column has-text-centered">
+            <IconHolder icon="javascript" title="Javascript" />
             <p>
               <strong>Flavors:</strong>
             </p>
             <p>Vanilla, ES6+, Node</p>
           </div>
-          <div className="column">
-            <h4 className="subtitle">HTML</h4>
+          <div className="column has-text-centered">
+            <IconHolder icon="html5" title="HTML" />
             <p>
               <strong>Flavors:</strong>
             </p>
             <p>Pug</p>
           </div>
-          <div className="column">
-            <h4 className="subtitle">CSS</h4>
+          <div className="column has-text-centered">
+            <IconHolder icon="css3" title="CSS" />
             <p>
               <strong>Flavors:</strong>
             </p>
@@ -106,48 +73,84 @@ export const IndexPageTemplate = ({
         </article>
         <h3 className="title is-3">Familiar Languages</h3>
         <article className="columns">
-          <div className="column">Swift</div>
-          <div className="column">Kotlin</div>
-          <div className="column">Python</div>
-          <div className="column">PhP</div>
+          <div className="column has-text-centered">
+            <IconHolder title="Swift" icon="swift" />
+          </div>
+          <div className="column has-text-centered">
+            <IconHolder title="Kotlin" icon="kotlin" />
+          </div>
+          <div className="column has-text-centered">
+            <IconHolder title="Python" icon="python" />
+          </div>
+          <div className="column has-text-centered">
+            <IconHolder title="PhP" icon="php" />
+          </div>
         </article>
         <h3 className="title is-3">Frameworks</h3>
         <article className="columns">
-          <div className="column">MongoDB</div>
-          <div className="column">AWS</div>
-          <div className="column">MySQL</div>
-          <div className="column">React</div>
-          <div className="column">Shopify</div>
-          <div className="column">Gatsby</div>
+          <div className="column has-text-centered">
+            <IconHolder title="MongoDB" icon="mongodb" />
+          </div>
+          <div className="column has-text-centered">
+            <IconHolder title="AWS" icon="aws" />
+          </div>
+          <div className="column has-text-centered">
+            <IconHolder title="MySQL" icon="mysql" />
+          </div>
+          <div className="column has-text-centered">
+            <IconHolder title="React" icon="react" />
+          </div>
+          <div className="column has-text-centered">
+            <IconHolder title="Shopify" icon="shopify" />
+          </div>
+          <div className="column has-text-centered">
+            <div className="column">
+              <IconHolder title="Gatsby" icon="gatsby" />
+            </div>
+          </div>
         </article>
         <h3 className="title">Tools</h3>
         <article className="columns">
-          <div className="column">GitHub</div>
-          <div className="column">npm</div>
-          <div className="column">webpack</div>
+          <div className="column has-text-centered">
+            <IconHolder title="github" icon="github" />
+          </div>
+          <div className="column has-text-centered">
+            <IconHolder title="npm" icon="npm" />
+          </div>
+          <div className="column has-text-centered">
+            <IconHolder title="webpack" icon="webpack" />
+          </div>
         </article>
-      </section>
-    </div>
-    <div className="container">
-      <section className="section">
-        <h1 className="title is-1">About</h1>
-        <blockquote>I Just want to build cool things.</blockquote>
-        <p>
-          The years I spent in the Air Force and as a developer have taught me
-          the importance of order and structure. Through this, and my
-          fascination with philosophy, I have grown a passion for functional
-          minimalism. These ideals translate into how I conduct my work. Every
-          project serves a function, and every element serves a purpose.
-        </p>
-        <p>
-          I am currently working as a freelance web developer, and trying to
-          learn as much about Javascript along the way. When it comes down to
-          it, I just want to build cool things. When I'm not writing code I'm
-          probably playing <strike>Overwatch</strike> Apex Legends, listening to
-          an audiobook or drinking craft beer...or possibly all three.
-        </p>
-      </section>
-    </div>
+      </div>
+    </section>
+    <section className="section">
+      <div className="container">
+        <h1 className="title is-1 has-text-centered">About</h1>
+        <div className="columns">
+          <div className="column">
+            <blockquote>I Just want to build cool things.</blockquote>
+          </div>
+          <div className="column">
+            <p>
+              The years I spent in the Air Force and as a developer have taught
+              me the importance of order and structure. Through this, and my
+              fascination with philosophy, I have grown a passion for functional
+              minimalism. These ideals translate into how I conduct my work.
+              Every project serves a function, and every element serves a
+              purpose.
+            </p>
+            <p>
+              I am currently working as a freelance web developer, and trying to
+              learn as much about Javascript along the way. When it comes down
+              to it, I just want to build cool things. When I'm not writing code
+              I'm probably playing <strike>Overwatch</strike> Apex Legends,
+              listening to an audiobook or drinking craft beer...or possibly all
+              three.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </>
 );
 

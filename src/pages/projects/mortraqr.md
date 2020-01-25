@@ -3,7 +3,8 @@ templateKey: project
 title: MorTraqr
 type: Web Application
 description: Did a Website
-featuredimage: /img/flavor_wheel.jpg
+featuredimage: /img/MT-banner.jpg
+profileimage: /img/MT-profile.jpg
 tags:
   - flavor
   - tasting

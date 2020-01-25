@@ -7,9 +7,7 @@ const ProjectCard = ({ project }) => (
   <article className="column " style={{ padding: '0' }}>
     <Link to={project.fields.slug} style={{ position: 'relative' }}>
       <figure className="image is-3by2">
-        <img
-          src={project.frontmatter.featuredimage.childImageSharp.fluid.src}
-        />
+        <img src={project.frontmatter.profileimage.childImageSharp.fluid.src} />
         <div
           className="label"
           style={{
@@ -25,7 +23,7 @@ const ProjectCard = ({ project }) => (
             alignItems: 'center',
             flexDirection: 'column',
           }}>
-          <h1 className="title">{project.frontmatter.title}</h1>
+          <h1 className="title has-text-yellow">{project.frontmatter.title}</h1>
           <h2 className="subtitle has-text-white">
             {project.frontmatter.type}
           </h2>
@@ -127,7 +125,14 @@ export default () => (
                 type
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 120, quality: 100) {
+                    fluid(maxWidth: 600, quality: 100) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
+                profileimage {
+                  childImageSharp {
+                    fluid(maxWidth: 600, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }
@@ -146,39 +151,3 @@ export default () => (
     }}
   />
 );
-// export default () => (
-//   <StaticQuery
-//     query={graphql`
-//       query BlogRollQuery {
-//         allMarkdownRemark(
-//           sort: { order: DESC, fields: [frontmatter___date] }
-//           filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
-//         ) {
-//           edges {
-//             node {
-//               excerpt(pruneLength: 400)
-//               id
-//               fields {
-//                 slug
-//               }
-//               frontmatter {
-//                 title
-//                 templateKey
-//                 date(formatString: "MMMM DD, YYYY")
-//                 featuredpost
-//                 featuredimage {
-//                   childImageSharp {
-//                     fluid(maxWidth: 120, quality: 100) {
-//                       ...GatsbyImageSharpFluid
-//                     }
-//                   }
-//                 }
-//               }
-//             }
-//           }
-//         }
-//       }
-//     `}
-//     render={(data, count) => <BlogRoll data={data} count={count} />}
-//   />
-// )
