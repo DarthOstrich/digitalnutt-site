@@ -7,13 +7,14 @@ import Layout from '../components/Layout';
 // import BlogRoll from '../components/BlogRoll';
 import ProjectRoll from '../components/ProjectRoll';
 
-const IconHolder = ({ icon, title }) => (
-  <>
+const IconHolder = ({ icon, title, children }) => (
+  <div className="column has-text-centered is-one-third">
     <figure className="image is-96x96" style={{ margin: 'auto' }}>
       <img src={`/img/icons/${icon}.png`} alt={`${icon} icon`} />
     </figure>
     <h4 className="subtitle">{title}</h4>
-  </>
+    {children}
+  </div>
 );
 export const IndexPageTemplate = ({
   image,
@@ -34,93 +35,74 @@ export const IndexPageTemplate = ({
     <section className="section">
       <div className="container">
         <h1 className="title is-1 has-text-centered">Skills</h1>
-        <h2 className="title is-2">Bottom Line</h2>
-        <p className="subtitle">
-          I am a web developer who mainly works in Javascript. I also write a
-          lot. You can find me on{' '}
-          <a href="https://medium.com/@jarednutt27">Medium</a>,{' '}
-          <a href="https://dev.to/darthostrich">Practical Dev</a> or in video
-          version on{' '}
-          <a href="https://www.youtube.com/channel/UCZ9sBtbkSoLhjUaS-B0I-BQ">
-            Youtube
-          </a>
-          .
-        </p>
-        <h2 className="title is-2">Development</h2>
-        <h3 className="title is-3">Everyday Languages</h3>
-        <article className="columns">
-          <div className="column has-text-centered">
-            <IconHolder icon="javascript" title="Javascript" />
-            <p>
-              <strong>Flavors:</strong>
+        <div className="columns">
+          <div className="column is-one-quarter">
+            <h2 className="title is-2">Bottom Line</h2>
+          </div>
+          <div className="column">
+            <p className="subtitle">
+              I am a web developer who mainly works in Javascript. I also write
+              a lot. You can find me on{' '}
+              <a href="https://medium.com/@jarednutt27">Medium</a>,{' '}
+              <a href="https://dev.to/darthostrich">Practical Dev</a> or in
+              video form on{' '}
+              <a href="https://www.youtube.com/channel/UCZ9sBtbkSoLhjUaS-B0I-BQ">
+                Youtube
+              </a>
+              .
             </p>
-            <p>Vanilla, ES6+, Node</p>
           </div>
-          <div className="column has-text-centered">
-            <IconHolder icon="html5" title="HTML" />
-            <p>
-              <strong>Flavors:</strong>
-            </p>
-            <p>Pug</p>
+        </div>
+        <div className="columns">
+          <div className="column is-one-quarter">
+            <h2 className="title is-2">Development</h2>
           </div>
-          <div className="column has-text-centered">
-            <IconHolder icon="css3" title="CSS" />
-            <p>
-              <strong>Flavors:</strong>
-            </p>
-            <p>Sass</p>
-          </div>
-        </article>
-        <h3 className="title is-3">Familiar Languages</h3>
-        <article className="columns">
-          <div className="column has-text-centered">
-            <IconHolder title="Swift" icon="swift" />
-          </div>
-          <div className="column has-text-centered">
-            <IconHolder title="Kotlin" icon="kotlin" />
-          </div>
-          <div className="column has-text-centered">
-            <IconHolder title="Python" icon="python" />
-          </div>
-          <div className="column has-text-centered">
-            <IconHolder title="PhP" icon="php" />
-          </div>
-        </article>
-        <h3 className="title is-3">Frameworks</h3>
-        <article className="columns">
-          <div className="column has-text-centered">
-            <IconHolder title="MongoDB" icon="mongodb" />
-          </div>
-          <div className="column has-text-centered">
-            <IconHolder title="AWS" icon="aws" />
-          </div>
-          <div className="column has-text-centered">
-            <IconHolder title="MySQL" icon="mysql" />
-          </div>
-          <div className="column has-text-centered">
-            <IconHolder title="React" icon="react" />
-          </div>
-          <div className="column has-text-centered">
-            <IconHolder title="Shopify" icon="shopify" />
-          </div>
-          <div className="column has-text-centered">
-            <div className="column">
+          <div className="column">
+            <h3 className="title is-3">Everyday Languages</h3>
+            <article className="columns">
+              <IconHolder icon="javascript" title="Javascript">
+                <p>
+                  <strong>Flavors:</strong>
+                </p>
+                <p>Vanilla, ES6+, Node</p>
+              </IconHolder>
+              <IconHolder icon="html5" title="HTML">
+                <p>
+                  <strong>Flavors:</strong>
+                </p>
+                <p>Pug</p>
+              </IconHolder>
+              <IconHolder icon="css3" title="CSS">
+                <p>
+                  <strong>Flavors:</strong>
+                </p>
+                <p>Sass</p>
+              </IconHolder>
+            </article>
+            <h3 className="title is-3">Familiar Languages</h3>
+            <article className="columns is-multiline">
+              <IconHolder title="Swift" icon="swift" />
+              <IconHolder title="Kotlin" icon="kotlin" />
+              <IconHolder title="Python" icon="python" />
+              <IconHolder title="PhP" icon="php" />
+            </article>
+            <h3 className="title is-3">Frameworks</h3>
+            <article className="columns is-multiline">
+              <IconHolder title="MongoDB" icon="mongodb" />
+              <IconHolder title="AWS" icon="aws" />
+              <IconHolder title="MySQL" icon="mysql" />
+              <IconHolder title="React" icon="react" />
+              <IconHolder title="Shopify" icon="shopify" />
               <IconHolder title="Gatsby" icon="gatsby" />
-            </div>
+            </article>
+            <h3 className="title">Tools</h3>
+            <article className="columns">
+              <IconHolder title="github" icon="github" />
+              <IconHolder title="npm" icon="npm" />
+              <IconHolder title="webpack" icon="webpack" />
+            </article>
           </div>
-        </article>
-        <h3 className="title">Tools</h3>
-        <article className="columns">
-          <div className="column has-text-centered">
-            <IconHolder title="github" icon="github" />
-          </div>
-          <div className="column has-text-centered">
-            <IconHolder title="npm" icon="npm" />
-          </div>
-          <div className="column has-text-centered">
-            <IconHolder title="webpack" icon="webpack" />
-          </div>
-        </article>
+        </div>
       </div>
     </section>
     <section className="section">
