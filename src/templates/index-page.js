@@ -18,17 +18,7 @@ const IconHolder = ({ icon, title, children }) => (
     {children}
   </div>
 );
-export const IndexPageTemplate = (
-  {
-    // image,
-    // title,
-    // heading,
-    // subheading,
-    // mainpitch,
-    // description,
-    // intro,
-  },
-) => (
+export const IndexPageTemplate = props => (
   <>
     <section className="section">
       <div className="container">
