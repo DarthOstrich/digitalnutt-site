@@ -8,21 +8,7 @@ const ProjectCard = ({ project }) => (
     <Link to={project.fields.slug} style={{ position: 'relative' }}>
       <figure className="image is-3by2">
         <img src={project.frontmatter.profileimage.childImageSharp.fluid.src} />
-        <div
-          className="label"
-          style={{
-            backgroundColor: 'rgba(7,54,66,0.8)',
-            position: 'absolute',
-            top: '0',
-            left: '0',
-            right: '0',
-            bottom: '0',
-            display: 'flex',
-            textAlign: 'center',
-            justifyContent: 'center',
-            alignItems: 'center',
-            flexDirection: 'column',
-          }}>
+        <div className="label">
           <h1 className="title has-text-yellow">{project.frontmatter.title}</h1>
           <h2 className="subtitle has-text-white">
             {project.frontmatter.type}

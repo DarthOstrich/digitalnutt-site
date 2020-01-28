@@ -8,10 +8,10 @@ import Layout from '../components/Layout';
 import ProjectRoll from '../components/ProjectRoll';
 
 const IconHolder = ({ icon, title, children }) => (
-  <div className="column has-text-centered is-one-third">
+  <div className="column has-text-centered is-one-third ">
     <figure
-      className="image is-96x96 skills-list-icon"
-      style={{ margin: 'auto' }}>
+      className="image is-64x64 skills-list-icon"
+      style={{ margin: 'auto', marginBottom: '0.5rem' }}>
       <img src={`/img/icons/${icon}.png`} alt={`${icon} icon`} />
     </figure>
     <h4 className="subtitle">{title}</h4>
@@ -40,14 +40,14 @@ export const IndexPageTemplate = (
       <div className="container">
         <h1 className="title is-1 has-text-centered">Skills</h1>
         <div className="columns">
-          <div className="column is-one-quarter">
+          <div className="column is-one-quarter has-text-centered">
             <h2 className="title is-2">Development</h2>
-            <figure className="image has-text-centered">
+            <figure className="image ">
               <svg
                 data-name="terminal-icon"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 138 117.5"
-                className="icon">
+                className="icon icon--section">
                 <title>portfolio-logo-set</title>
                 <path
                   d="M29.42,44.15V46.9L17.26,54.48l-1.44-2,11.3-7-11.3-6.94,1.31-2Z"
@@ -61,7 +61,7 @@ export const IndexPageTemplate = (
                   height="113.5"
                   rx="10"
                   ry="10"
-                  class="icon__stroke"
+                  className="icon__stroke"
                 />
                 <line
                   x1="1.79"
@@ -87,7 +87,7 @@ export const IndexPageTemplate = (
               .
             </p>
             <h3 className="title is-3">Everyday Languages</h3>
-            <article className="columns">
+            <article className="columns is-multiline is-mobile">
               <IconHolder icon="javascript" title="Javascript">
                 <p>
                   <strong>Flavors:</strong>
@@ -108,14 +108,14 @@ export const IndexPageTemplate = (
               </IconHolder>
             </article>
             <h3 className="title is-3">Familiar Languages</h3>
-            <article className="columns is-multiline">
+            <article className="columns is-multiline is-mobile">
               <IconHolder title="Swift" icon="swift" />
               <IconHolder title="Kotlin" icon="kotlin" />
               <IconHolder title="Python" icon="python" />
               <IconHolder title="PhP" icon="php" />
             </article>
             <h3 className="title is-3">Frameworks</h3>
-            <article className="columns is-multiline">
+            <article className="columns is-multiline is-mobile">
               <IconHolder title="MongoDB" icon="mongodb" />
               <IconHolder title="AWS" icon="aws" />
               <IconHolder title="MySQL" icon="mysql" />
@@ -124,7 +124,7 @@ export const IndexPageTemplate = (
               <IconHolder title="Gatsby" icon="gatsby" />
             </article>
             <h3 className="title">Tools</h3>
-            <article className="columns">
+            <article className="columns is-multiline is-mobile">
               <IconHolder title="github" icon="github" />
               <IconHolder title="npm" icon="npm" />
               <IconHolder title="webpack" icon="webpack" />
@@ -140,7 +140,7 @@ export const IndexPageTemplate = (
           <div className="column">
             <blockquote>I just want to build cool things.</blockquote>
           </div>
-          <div className="column">
+          <div className="column content">
             <p>
               The years I spent in the Air Force and as a developer have taught
               me the importance of order and structure. Through this, and my
