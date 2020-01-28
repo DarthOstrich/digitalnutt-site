@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link, graphql, StaticQuery } from 'gatsby';
+// import { Link, graphql, StaticQuery } from 'gatsby';
 
 import Layout from '../components/Layout';
 // import Features from '../components/Features';
@@ -18,43 +18,27 @@ const IconHolder = ({ icon, title, children }) => (
     {children}
   </div>
 );
-export const IndexPageTemplate = ({
-  image,
-  title,
-  heading,
-  subheading,
-  mainpitch,
-  description,
-  intro,
-}) => (
+export const IndexPageTemplate = (
+  {
+    // image,
+    // title,
+    // heading,
+    // subheading,
+    // mainpitch,
+    // description,
+    // intro,
+  },
+) => (
   <>
     <section className="section">
       <div className="container">
-        <h1 className="title is-1 has-text-centered">Latest Projects</h1>
+        <h1 className="title is-1 has-text-centered">Case Studies</h1>
         <ProjectRoll />
       </div>
     </section>
     <section className="section">
       <div className="container">
         <h1 className="title is-1 has-text-centered">Skills</h1>
-        <div className="columns">
-          <div className="column is-one-quarter">
-            <h2 className="title is-2">Bottom Line</h2>
-          </div>
-          <div className="column">
-            <p className="subtitle">
-              I am a web developer who mainly works in Javascript. I also write
-              a lot. You can find me on{' '}
-              <a href="https://medium.com/@jarednutt27">Medium</a>,{' '}
-              <a href="https://dev.to/darthostrich">Practical Dev</a> or in
-              video form on{' '}
-              <a href="https://www.youtube.com/channel/UCZ9sBtbkSoLhjUaS-B0I-BQ">
-                Youtube
-              </a>
-              .
-            </p>
-          </div>
-        </div>
         <div className="columns">
           <div className="column is-one-quarter">
             <h2 className="title is-2">Development</h2>
@@ -90,6 +74,18 @@ export const IndexPageTemplate = ({
             </figure>
           </div>
           <div className="column">
+            <h3 className="title is-3">Bottom Line</h3>
+            <p className="subtitle">
+              I am a web developer who mainly works in Javascript. I also write
+              a lot. You can find me on{' '}
+              <a href="https://medium.com/@jarednutt27">Medium</a>,{' '}
+              <a href="https://dev.to/darthostrich">Practical Dev</a> or in
+              video form on{' '}
+              <a href="https://www.youtube.com/channel/UCZ9sBtbkSoLhjUaS-B0I-BQ">
+                Youtube
+              </a>
+              .
+            </p>
             <h3 className="title is-3">Everyday Languages</h3>
             <article className="columns">
               <IconHolder icon="javascript" title="Javascript">
@@ -142,7 +138,7 @@ export const IndexPageTemplate = ({
         <h1 className="title is-1 has-text-centered">About</h1>
         <div className="columns">
           <div className="column">
-            <blockquote>I Just want to build cool things.</blockquote>
+            <blockquote>I just want to build cool things.</blockquote>
           </div>
           <div className="column">
             <p>
