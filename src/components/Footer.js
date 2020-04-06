@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 // import logo from '../img/logo.svg';
-import logo from '../img/CodeNutt-02.png';
+import logo from '../img/codeNutt-02.png';
 import codepen from '../img/portfolio-logo-set_codepen.svg';
 import github from '../img/portfolio-logo-set_github.svg';
 import medium from '../img/portfolio-logo-set_medium.svg';
