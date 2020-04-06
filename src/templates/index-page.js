@@ -1,17 +1,15 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 // import { Link, graphql, StaticQuery } from 'gatsby';
 
-import Layout from '../components/Layout';
+import Layout from "../components/Layout";
 // import Features from '../components/Features';
 // import BlogRoll from '../components/BlogRoll';
-import ProjectRoll from '../components/ProjectRoll';
+import ProjectRoll from "../components/ProjectRoll";
 
 const IconHolder = ({ icon, title, children }) => (
   <div className="column has-text-centered is-one-third ">
-    <figure
-      className="image is-64x64 skills-list-icon"
-      style={{ margin: 'auto', marginBottom: '0.5rem' }}>
+    <figure className="image is-64x64 skills-list-icon" style={{ margin: "auto", marginBottom: "0.5rem" }}>
       <img src={`/img/icons/${icon}.png`} alt={`${icon} icon`} />
     </figure>
     <h4 className="subtitle">{title}</h4>
@@ -20,6 +18,12 @@ const IconHolder = ({ icon, title, children }) => (
 );
 export const IndexPageTemplate = props => (
   <>
+    <section className="section">
+      <div className="container">
+        <h1 className="title is-1 has-text-centered">Who I Am</h1>
+        <h2 className="title is-2">Jared Nutt is a Los Angeles based freelance Software Engineer, focused on the web. He just wants to build cool things.</h2>
+      </div>
+    </section>
     <section className="section">
       <div className="container">
         <h1 className="title is-1 has-text-centered">Case Studies</h1>
@@ -33,48 +37,19 @@ export const IndexPageTemplate = props => (
           <div className="column is-one-quarter has-text-centered">
             <h2 className="title is-2">Development</h2>
             <figure className="image ">
-              <svg
-                data-name="terminal-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 138 117.5"
-                className="icon icon--section">
+              <svg data-name="terminal-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 117.5" className="icon icon--section">
                 <title>portfolio-logo-set</title>
-                <path
-                  d="M29.42,44.15V46.9L17.26,54.48l-1.44-2,11.3-7-11.3-6.94,1.31-2Z"
-                  style={{ fill: '#231f20' }}
-                />
-                <path d="M30.92,52h16v2.37h-16Z" style={{ fill: '#231f20' }} />
-                <rect
-                  x="2"
-                  y="2"
-                  width="134"
-                  height="113.5"
-                  rx="10"
-                  ry="10"
-                  className="icon__stroke"
-                />
-                <line
-                  x1="1.79"
-                  y1="25.17"
-                  x2="136.21"
-                  y2="25.17"
-                  className="icon__stroke icon__stroke--inner"
-                />
+                <path d="M29.42,44.15V46.9L17.26,54.48l-1.44-2,11.3-7-11.3-6.94,1.31-2Z" style={{ fill: "#231f20" }} />
+                <path d="M30.92,52h16v2.37h-16Z" style={{ fill: "#231f20" }} />
+                <rect x="2" y="2" width="134" height="113.5" rx="10" ry="10" className="icon__stroke" />
+                <line x1="1.79" y1="25.17" x2="136.21" y2="25.17" className="icon__stroke icon__stroke--inner" />
               </svg>
             </figure>
           </div>
           <div className="column">
             <h3 className="title is-3">Bottom Line</h3>
             <p className="subtitle">
-              I am a web developer who mainly works in Javascript. I also write
-              a lot. You can find me on{' '}
-              <a href="https://medium.com/@jarednutt27">Medium</a>,{' '}
-              <a href="https://dev.to/darthostrich">Practical Dev</a> or in
-              video form on{' '}
-              <a href="https://www.youtube.com/channel/UCZ9sBtbkSoLhjUaS-B0I-BQ">
-                Youtube
-              </a>
-              .
+              I am a web developer who mainly works in Javascript. I also write a lot. You can find me on <a href="https://medium.com/@jarednutt27">Medium</a>, <a href="https://dev.to/darthostrich">Practical Dev</a> or in video form on <a href="https://www.youtube.com/channel/UCZ9sBtbkSoLhjUaS-B0I-BQ">Youtube</a>.
             </p>
             <h3 className="title is-3">Everyday Languages</h3>
             <article className="columns is-multiline is-mobile">
@@ -123,34 +98,6 @@ export const IndexPageTemplate = props => (
         </div>
       </div>
     </section>
-    <section className="section">
-      <div className="container">
-        <h1 className="title is-1 has-text-centered">About</h1>
-        <div className="columns">
-          <div className="column">
-            <blockquote>I just want to build cool things.</blockquote>
-          </div>
-          <div className="column content">
-            <p>
-              The years I spent in the Air Force and as a developer have taught
-              me the importance of order and structure. Through this, and my
-              fascination with philosophy, I have grown a passion for functional
-              minimalism. These ideals translate into how I conduct my work.
-              Every project serves a function, and every element serves a
-              purpose.
-            </p>
-            <p>
-              I am currently working as a freelance web developer, and trying to
-              learn as much about Javascript along the way. When it comes down
-              to it, I just want to build cool things. When I'm not writing code
-              I'm probably playing <strike>Overwatch</strike> Apex Legends,
-              listening to an audiobook or drinking craft beer...or possibly all
-              three.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
   </>
 );
 
@@ -162,8 +109,8 @@ IndexPageTemplate.propTypes = {
   mainpitch: PropTypes.object,
   description: PropTypes.string,
   intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
+    blurbs: PropTypes.array
+  })
 };
 
 const IndexPage = ({ data }) => {
@@ -187,9 +134,9 @@ const IndexPage = ({ data }) => {
 IndexPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }),
+      frontmatter: PropTypes.object
+    })
+  })
 };
 
 export default IndexPage;
