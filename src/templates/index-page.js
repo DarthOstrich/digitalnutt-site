@@ -31,6 +31,9 @@ export const IndexPageTemplate = props => (
       <div className="container">
         <h1 className="title is-1 has-text-centered">Case Studies</h1>
         <ProjectRoll caseStudiesOnly />
+        <p className="has-text-right">
+          <Link to="/work">Checkout More &rarr;</Link>
+        </p>
       </div>
     </section>
     <section className="section">

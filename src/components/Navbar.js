@@ -50,16 +50,16 @@ const Navbar = class extends React.Component {
           <div id="navMenu" className={`navbar-menu ${this.state.navBarActiveClass}`}>
             <div className="navbar-end has-text-centered">
               <Link className="navbar-item" to="/work">
-                Work
+                <h2 className="has-text-yellow is-uppercase">Work</h2>
               </Link>
               <Link className="navbar-item" to="/teaching">
-                Teaching
+                <h2 className="has-text-yellow is-uppercase">Teaching</h2>
               </Link>
               <Link className="navbar-item" to="/art">
-                Art
+                <h2 className="has-text-yellow is-uppercase">Art</h2>
               </Link>
               <Link className="navbar-item" to="/contact">
-                Contact
+                <h2 className="has-text-yellow is-uppercase">Contact</h2>
               </Link>
             </div>
           </div>
