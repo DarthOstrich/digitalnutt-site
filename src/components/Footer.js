@@ -1,14 +1,14 @@
-import React from 'react';
-import { Link } from 'gatsby';
+import React from "react";
+import { Link } from "gatsby";
 
 // import logo from '../img/logo.svg';
-import logo from '../img/codeNutt-02.png';
-import codepen from '../img/portfolio-logo-set_codepen.svg';
-import github from '../img/portfolio-logo-set_github.svg';
-import medium from '../img/portfolio-logo-set_medium.svg';
-import twitter from '../img/portfolio-logo-set_twitter.svg';
-import dev from '../img/portfolio-logo-set_dev.svg';
-import youtube from '../img/portfolio-logo-set_youtube.svg';
+import logo from "../img/codeNutt-02.png";
+import codepen from "../img/portfolio-logo-set_codepen.svg";
+import github from "../img/portfolio-logo-set_github.svg";
+import medium from "../img/portfolio-logo-set_medium.svg";
+import twitter from "../img/portfolio-logo-set_twitter.svg";
+import dev from "../img/portfolio-logo-set_dev.svg";
+import youtube from "../img/portfolio-logo-set_youtube.svg";
 // import facebook from '../img/social/facebook.svg';
 // import instagram from '../img/social/instagram.svg';
 // import twitter from '../img/social/twitter.svg';
@@ -20,16 +20,11 @@ const Footer = class extends React.Component {
       <footer className="footer">
         <div className="content columns ">
           <aside className="column is-one-third has-text-centered">
-            <img src={logo} alt="Digital Nutt" style={{ width: '10em' }} />
+            <img src={logo} alt="Digital Nutt" style={{ width: "10em" }} />
           </aside>
           <section className="column">
             <a href="https://codepen.io/DarthOstrich">
-              <svg
-                id="Layer_1"
-                data-name="Layer 1"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 200 200"
-                className="icon icon--social">
+              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" className="icon icon--social">
                 <title>portfolio-logo-set</title>
                 <g id="gi95s1.tif">
                   <path
@@ -53,12 +48,7 @@ const Footer = class extends React.Component {
             {/*   </svg> */}
             {/* </a> */}
             <a href="https://twitter.com/code_nutt" target="_blank">
-              <svg
-                id="Layer_1"
-                data-name="Layer 1"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 200 200"
-                className="icon icon--social">
+              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" className="icon icon--social">
                 <title>portfolio-logo-set</title>
                 <g id="gJjI1E.tif">
                   <path
@@ -69,12 +59,7 @@ const Footer = class extends React.Component {
               </svg>
             </a>
             <a href="https://github.com/DarthOstrich" target="_blank">
-              <svg
-                id="Layer_1"
-                data-name="Layer 1"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 200 200"
-                className="icon icon--social">
+              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" className="icon icon--social">
                 <title>portfolio-logo-set</title>
                 <g id="_7JV8hd.tif" data-name=" 7JV8hd.tif">
                   <path
@@ -85,32 +70,19 @@ const Footer = class extends React.Component {
               </svg>
             </a>
             <a href="https://medium.com/@jarednutt27" target="_blank">
-              <svg
-                id="Layer_1"
-                data-name="Layer 1"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 200 200"
-                className="icon icon--social">
+              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" className="icon icon--social">
                 <title>portfolio-logo-set</title>
                 <g id="_5pDvOt.tif" data-name="5pDvOt.tif">
                   <path
                     className="icon__stroke icon__stroke--social"
                     d="M150,50.36v99.9H50.1V50.36H150ZM78,88.11h.13l.22.48q8.28,18,16.55,36.08c.21.46.32,1.09.68,1.32s1,0,1.48.08.57-.14.72-.51Q105,107,112.33,88.49l.18-.41a.22.22,0,0,1,.09.19v30.14a1.89,1.89,0,0,1-.62,1.47c-1.64,1.56-3.23,3.17-4.88,4.7a1.55,1.55,0,0,0-.41,1.56h26.22a1.53,1.53,0,0,0-.54-1.7c-1.6-1.51-3.14-3.07-4.71-4.6a1.57,1.57,0,0,1-.52-1.21c0-1.42,0-2.83,0-4.25q0-17,0-33.95a1.58,1.58,0,0,1,.53-1.2c1.65-1.57,3.27-3.18,5-4.71a1.55,1.55,0,0,0,.43-1.63c-.2,0-12.13,0-17.92,0a.76.76,0,0,0-.83.58Q108,89.3,101.61,105.15c-.08.2-.17.4-.29.68-.13-.27-.22-.44-.29-.62q-7.26-15.9-14.51-31.82a.72.72,0,0,0-.79-.51c-6.1,0-12.19,0-18.29,0h-.7c.09.49,0,1,.25,1.3,2,2.53,4.13,5,6.22,7.51a2.8,2.8,0,0,1,.72,1.86q0,14.73,0,29.46a5.49,5.49,0,0,0,0,.58,3.32,3.32,0,0,1-.77,2.59c-2.26,2.75-4.52,5.51-6.81,8.23A1.92,1.92,0,0,0,66,126H86a2,2,0,0,0-.42-1.68c-2.29-2.7-4.53-5.45-6.78-8.18a3.52,3.52,0,0,1-.83-2.44c0-.39,0-.78,0-1.17V88.11Z"
                   />
-                  <path
-                    className="icon__stroke icon__stroke--social"
-                    d="M127.76,50.36H50.1v99.9s-.09,0-.09,0,0-.26,0-.39V50.26h.76c32.93,0,66.31.09,99.24.1"
-                  />
+                  <path className="icon__stroke icon__stroke--social" d="M127.76,50.36H50.1v99.9s-.09,0-.09,0,0-.26,0-.39V50.26h.76c32.93,0,66.31.09,99.24.1" />
                 </g>
               </svg>
             </a>
             <a href="https://www.youtube.com/channel/UCZ9sBtbkSoLhjUaS-B0I-BQ">
-              <svg
-                id="Layer_1"
-                data-name="Layer 1"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 200 200"
-                className="icon icon--social">
+              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" className="icon icon--social">
                 <title>portfolio-logo-set</title>
                 <g id="o3DiYX.tif">
                   <path

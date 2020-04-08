@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-// import { Link, graphql, StaticQuery } from 'gatsby';
+import { Link } from "gatsby";
 
 import Layout from "../components/Layout";
 // import Features from '../components/Features';
@@ -21,7 +21,10 @@ export const IndexPageTemplate = props => (
     <section className="section">
       <div className="container">
         <h1 className="title is-1 has-text-centered">Who I Am</h1>
-        <h2 className="title is-2">Jared Nutt is a Los Angeles based freelance Software Engineer, focused on the web. He just wants to build cool things.</h2>
+        <h2 className="" style={{ maxWidth: "700px", margin: "5rem auto", fontSize: "24px" }}>
+          Hi! I'm Jared, a freelance Software Engineer focused on the web. When I'm not coding, I'm probably <Link to="/art">writing music</Link>, playing <strike>Overwatch</strike> Apex Legends, drinking a craft beer or all of the above. You may have read one of my articles that I posted on <a href="https://medium.com/@jarednutt27">Medium</a>, <a href="https://dev.to/darthostrich">Practical Dev</a> or in video form on{" "}
+          <a href="https://www.youtube.com/channel/UCZ9sBtbkSoLhjUaS-B0I-BQ">YouTube</a>.
+        </h2>
       </div>
     </section>
     <section className="section">
@@ -47,10 +50,10 @@ export const IndexPageTemplate = props => (
             </figure>
           </div>
           <div className="column">
-            <h3 className="title is-3">Bottom Line</h3>
-            <p className="subtitle">
-              I am a web developer who mainly works in Javascript. I also write a lot. You can find me on <a href="https://medium.com/@jarednutt27">Medium</a>, <a href="https://dev.to/darthostrich">Practical Dev</a> or in video form on <a href="https://www.youtube.com/channel/UCZ9sBtbkSoLhjUaS-B0I-BQ">Youtube</a>.
-            </p>
+            {/* <h3 className="title is-3">Bottom Line</h3> */}
+            {/* <p className="subtitle"> */}
+            {/*   I am a web developer who mainly works in Javascript. I also write a lot. You can find me on <a href="https://medium.com/@jarednutt27">Medium</a>, <a href="https://dev.to/darthostrich">Practical Dev</a> or in video form on <a href="https://www.youtube.com/channel/UCZ9sBtbkSoLhjUaS-B0I-BQ">Youtube</a>. */}
+            {/* </p> */}
             <h3 className="title is-3">Everyday Languages</h3>
             <article className="columns is-multiline is-mobile">
               <IconHolder icon="javascript" title="Javascript">

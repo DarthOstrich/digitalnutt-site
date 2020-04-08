@@ -43,6 +43,7 @@ collections:
       - {label: "Technology", name: "technology", widget: "list"}
       - {label: "Role", name: "role", widget: "string"}
       - {label: "Project URL", name: "url", widget: "string", required: false}
+      - {label: "Featured on Front Page", name: "featured", widget: "boolean", default: false}
   - name: "pages"
     label: "Pages"
     files:
