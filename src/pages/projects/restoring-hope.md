@@ -1,10 +1,10 @@
 ---
 templateKey: project
 title: Restoring Hope
-Type: Static Site (Gatsby)
+type: Static Site (Gatsby)
 description: Website for Restoring Hope...
 featuredimage: /img/products-grid1.jpg
-profileimage: /img/logo.svg
+profileimage: /img/products-grid1.jpg
 tags:
   - React
 technology:
@@ -12,7 +12,8 @@ technology:
   - JavaScript
   - Bulma
 role: Lead Developer
-url: 'https://restoringhope-healing.com/'
+url: "https://restoringhope-healing.com/"
 featured: true
 ---
-\# Website
+
+# Website

@@ -30,7 +30,7 @@ export const IndexPageTemplate = props => (
     <section className="section">
       <div className="container">
         <h1 className="title is-1 has-text-centered">Case Studies</h1>
-        <ProjectRoll />
+        <ProjectRoll caseStudiesOnly />
       </div>
     </section>
     <section className="section">

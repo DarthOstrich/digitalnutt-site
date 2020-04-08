@@ -34,7 +34,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Type", name: "Type", widget: "string"}
+      - {label: "Type", name: "type", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Featured Image", name: "featuredimage", widget: image}
       - {label: "Profile Image", name: "profileimage", widget: image}
