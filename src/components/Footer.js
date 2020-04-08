@@ -3,12 +3,12 @@ import { Link } from "gatsby";
 
 // import logo from '../img/logo.svg';
 import logo from "../img/codeNutt-02.png";
-import codepen from "../img/portfolio-logo-set_codepen.svg";
-import github from "../img/portfolio-logo-set_github.svg";
-import medium from "../img/portfolio-logo-set_medium.svg";
-import twitter from "../img/portfolio-logo-set_twitter.svg";
-import dev from "../img/portfolio-logo-set_dev.svg";
-import youtube from "../img/portfolio-logo-set_youtube.svg";
+// import codepen from "../img/portfolio-logo-set_codepen.svg";
+// import github from "../img/portfolio-logo-set_github.svg";
+// import medium from "../img/portfolio-logo-set_medium.svg";
+// import twitter from "../img/portfolio-logo-set_twitter.svg";
+// import dev from "../img/portfolio-logo-set_dev.svg";
+// import youtube from "../img/portfolio-logo-set_youtube.svg";
 // import facebook from '../img/social/facebook.svg';
 // import instagram from '../img/social/instagram.svg';
 // import twitter from '../img/social/twitter.svg';
@@ -81,7 +81,7 @@ const Footer = class extends React.Component {
                 </g>
               </svg>
             </a>
-            <a href="https://www.youtube.com/channel/UCZ9sBtbkSoLhjUaS-B0I-BQ">
+            <a href="https://www.youtube.com/channel/UCZ9sBtbkSoLhjUaS-B0I-BQ?sub_confirmation=1">
               <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" className="icon icon--social">
                 <title>portfolio-logo-set</title>
                 <g id="o3DiYX.tif">

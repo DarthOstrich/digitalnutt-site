@@ -52,7 +52,9 @@ export default class TeachingPage extends React.Component {
                 <div className="column">
                   <h2>Video</h2>
                   <h3>YouTube</h3>
-                  <p>I have a youtube channel dedicated to web development.</p>
+                  <p>
+                    I have a youtube channel dedicated to web development. You can check it out <a href="https://www.youtube.com/channel/UCZ9sBtbkSoLhjUaS-B0I-BQ?sub_confirmation=1">here</a> or take a look at a recent video below.
+                  </p>
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/PlUbYws5Ybw?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   <h3>Twitch</h3>
                   <p>
