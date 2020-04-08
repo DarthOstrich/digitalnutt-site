@@ -1,18 +1,19 @@
 ---
 templateKey: project
 title: MorTraqr
-type: Web Application
+Type: Web Application
 description: Did a Website
 featuredimage: /img/MT-banner.jpg
 profileimage: /img/MT-profile.jpg
 tags:
   - flavor
   - tasting
-role: Lead Developer
-url: https://mortraqr.com/
 technology:
   - AWS
   - Node
+role: Lead Developer
+url: 'https://mortraqr.com/'
+featured: true
 ---
 
 <!-- ![flavor wheel](/img/flavor_wheel.jpg) -->
