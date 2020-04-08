@@ -21,8 +21,8 @@ export const IndexPageTemplate = props => (
     <section className="section">
       <div className="container">
         <h1 className="title is-1 has-text-centered">Who I Am</h1>
-        <h2 className="" style={{ maxWidth: "700px", margin: "5rem auto", fontSize: "24px" }}>
-          Hi! I'm Jared, a freelance Software Engineer focused on the web. When I'm not coding, I'm probably <Link to="/art">writing music</Link>, playing <strike>Overwatch</strike> Apex Legends, drinking a craft beer or all of the above. You may have read one of my articles that I posted on <a href="https://medium.com/@jarednutt27">Medium</a>, <a href="https://dev.to/darthostrich">Practical Dev</a> or in video form on{" "}
+        <h2 className="" style={{ maxWidth: "700px", margin: "5rem auto 3.5rem auto", fontSize: "24px" }}>
+          Hi! I'm Jared, a freelance Software Engineer focused on the web. When I'm not coding, I'm probably <Link to="/art">writing music</Link>, playing <strike>Overwatch</strike> Apex Legends, drinking a craft beer or all of the above. You may have read one of my articles that I published on <a href="https://medium.com/@jarednutt27">Medium</a>, <a href="https://dev.to/darthostrich">Practical Dev</a> or in video form on{" "}
           <a href="https://www.youtube.com/channel/UCZ9sBtbkSoLhjUaS-B0I-BQ">YouTube</a>.
         </h2>
       </div>
