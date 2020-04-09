@@ -1,21 +1,21 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
 // import Features from '../components/Features';
 // import Testimonials from '../components/Testimonials';
 // import Pricing from '../components/Pricing';
 // import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
-import { HTMLContent } from '../components/Content';
+import { HTMLContent } from "../components/Content";
 
 export const ProjectPageTemplate = ({
+  content,
   image,
   title,
   description,
-  content,
   role,
   technology,
-  url,
+  url
 }) => {
   // const PostContent = contentComponent || Content;
   return (
@@ -25,23 +25,26 @@ export const ProjectPageTemplate = ({
         style={{
           backgroundImage: `url(${
             !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-          })`,
-        }}></div>
+          })`
+        }}
+      ></div>
       <section className="section">
         <h1
           className="has-text-centered title is-1"
           style={{
-            marginTop: '-5rem',
-            position: 'relative',
-          }}>
+            marginTop: "-5rem",
+            position: "relative"
+          }}
+        >
           <a
             className="has-text-white"
             href={url}
             style={{
-              background: '#CB4B16',
-              paddingLeft: '2rem',
-              paddingRight: '2rem',
-            }}>
+              background: "#CB4B16",
+              paddingLeft: "2rem",
+              paddingRight: "2rem"
+            }}
+          >
             {title}
           </a>
         </h1>
@@ -63,7 +66,7 @@ export const ProjectPageTemplate = ({
         </article>
         <h2 className="title is-2">Description</h2>
         <p>{description}</p>
-        <p>Link: {<a href={url}>{title}</a> || 'No Link available'}</p>
+        <p>Link: {<a href={url}>{title}</a> || "No Link available"}</p>
         <h2 className="title is-2">Project Details</h2>
         <HTMLContent content={content} />
       </section>
@@ -75,7 +78,7 @@ ProjectPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   // heading: PropTypes.string,
-  description: PropTypes.string,
+  description: PropTypes.string
   // intro: PropTypes.shape({
   //   blurbs: PropTypes.array,
   // }),
@@ -115,9 +118,9 @@ const ProjectPage = ({ data }) => {
 ProjectPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }),
+      frontmatter: PropTypes.object
+    })
+  })
 };
 
 export default ProjectPage;
