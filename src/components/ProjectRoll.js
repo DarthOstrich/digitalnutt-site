@@ -7,7 +7,7 @@ const ProjectCard = ({ project }) => {
   const { frontmatter, fields } = project;
   const { type, profileimage, featuredimage } = frontmatter;
   return (
-    <article className="column " style={{ padding: "0" }}>
+    <article className="column is-half" style={{ padding: "0" }}>
       <Link to={project.fields.slug} style={{ position: "relative" }}>
         <figure className="image is-3by2">
           <img src={profileimage.childImageSharp.fluid.src} alt={profileimage.name} />
@@ -28,7 +28,7 @@ class ProjectRoll extends React.Component {
     const { edges: projects } = data.allMarkdownRemark;
 
     return (
-      <article className="columns ">
+      <article className="columns is-multiline">
         {projects.map(({ node }) => {
           if (caseStudiesOnly === true && node.frontmatter.featured) {
             return <ProjectCard project={node} key={node.id} />;
