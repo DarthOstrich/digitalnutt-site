@@ -9,8 +9,8 @@ description: >-
 featuredimage: /img/MT-banner.jpg
 profileimage: /img/MT-profile.jpg
 tags:
-  - flavor
-  - tasting
+  - AWS
+  - JavaScript
 technology:
   - JavaScript
   - AWS
@@ -22,6 +22,10 @@ role: Lead Engineer
 url: 'https://mortraqr.com/'
 featured: true
 ---
+### Concept
+
+![MorTraqr Color Palette](/MorTraqr/Palette.PNG "MorTraqr Color Palette")
+
 ### Architecture
 
 MorTraqr was built on a [Node.js](https://nodejs.org/en/) server. The Front-End is built on vanilla JS that’s compiled into previous versions using [Webpack](https://webpack.js.org/) with the help of [Babel](https://babeljs.io/).
